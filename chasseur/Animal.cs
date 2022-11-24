@@ -4,5 +4,6 @@
     {
         void crier();
         void courrir();
+        void afficher();
     }
 }

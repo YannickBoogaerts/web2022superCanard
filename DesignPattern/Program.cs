@@ -37,11 +37,17 @@ void TestChasseur()
 {
     Chasseur leon = new Chasseur();
     Chien medord = new Chien();
+    Canard canard = new Mandarin();
     leon.chasser(medord);
+    leon.chasser(canard);
 }
 
 internal class Chien : Animal
 {
+    public void afficher()
+    {
+        Console.WriteLine("je suis un chien");
+    }
 
     public void courrir()
     {
