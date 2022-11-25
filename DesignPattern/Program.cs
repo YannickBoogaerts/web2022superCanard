@@ -39,7 +39,7 @@ void TestChasseur()
     Chien medord = new Chien();
     Canard canard = new Mandarin();
     leon.chasser(medord);
-    leon.chasser(canard);
+    leon.chasser(new CanardAdaptateur(canard));
 }
 
 internal class Chien : Animal
